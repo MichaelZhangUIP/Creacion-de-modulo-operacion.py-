@@ -11,5 +11,8 @@ def multiplicar(a, b):
     return a * b
 
 def dividir(a, b):
-    """Divide dos números. Lanza un error si el divisor es cero."""
-    return a / b
+    if b == 0:
+        return "Error: No se puede dividir entre cero."
+    else:
+        return a / b
+    
